@@ -1,0 +1,70 @@
+{
+  "name": "@augmented-advisors/website-review-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for website audits using Playwright and Lighthouse",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "website-review-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src tests",
+    "clean": "rm -rf dist node_modules",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "playwright",
+    "lighthouse",
+    "website-audit",
+    "web-crawling",
+    "accessibility",
+    "seo",
+    "performance"
+  ],
+  "author": "Craig Trulove <craig@augmentedadvisors.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Augmented-Advisors/website-review-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Augmented-Advisors/website-review-mcp/issues"
+  },
+  "homepage": "https://github.com/Augmented-Advisors/website-review-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@types/pngjs": "^6.0.5",
+    "axe-core": "^4.11.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "lighthouse": "^11.0.0",
+    "pixelmatch": "^7.1.0",
+    "playwright": "^1.40.0",
+    "pngjs": "^7.0.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/xml2js": "^0.4.14",
+    "@vitest/coverage-v8": "^1.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
