@@ -13,3 +13,41 @@ coverage/
 *~
 .vscode/
 .idea/
+
+# Claude Code configuration (added by init-project.sh)
+# Claude Code local settings
+.claude/settings.local.json
+.claude/.cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets and credentials
+secrets/
+credentials/
+*.key
+*.pem
+*.cert
+
+# OS-specific
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
