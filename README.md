@@ -1,3 +1,10 @@
+---
+type: internal
+status: active
+started: 2026-01-01
+repo: Augmented-Advisors/website-review-mcp
+---
+
 # Website Review MCP Server
 
 Model Context Protocol (MCP) server providing comprehensive website audit capabilities.
