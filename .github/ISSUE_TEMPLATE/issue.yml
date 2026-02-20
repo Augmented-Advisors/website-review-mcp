@@ -1,0 +1,26 @@
+name: Issue
+description: Standard work item
+labels: ["status:needs-triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this matter? What triggered it?
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Done when
+      description: How do we know this is complete?
+  - type: input
+    id: depends
+    attributes:
+      label: Depends on
+      description: "Issue numbers this depends on (e.g., #12, #15)"

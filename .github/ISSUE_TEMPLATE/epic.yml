@@ -1,0 +1,16 @@
+name: Epic
+description: Multi-issue initiative
+labels: ["status:needs-triage"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What does success look like?
+    validations:
+      required: true
+  - type: textarea
+    id: child-issues
+    attributes:
+      label: Child issues
+      description: "Checklist of issues (use - [ ] #123 format)"
